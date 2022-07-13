@@ -17,7 +17,7 @@ Projeto Shopping Cart em Laravel Livewire para estudo do fluxo de um ecommerce, 
 - Alterar quantidade do produto no carrinho
 - Remover produto do carrinho
 
-## Pacotes e Instalações
+## Pacotes e Instalações utilizados no projeto
 
 Laravel Breeze
 ```
@@ -36,4 +36,9 @@ npm install
 e
 ```
 npm run dev
+```
+
+Livewire
+```
+composer require livewire/livewire
 ```
