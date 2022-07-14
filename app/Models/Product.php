@@ -12,4 +12,9 @@ class Product extends Model
     protected $fillable = [
         'name', 'description', 'image', 'price'
     ];
+
+    public function getFormattedPriceAttribute(): string
+    {
+        return int_to_decimal($this->price);
+    }
 }
