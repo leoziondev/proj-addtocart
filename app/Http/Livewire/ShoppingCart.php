@@ -54,5 +54,7 @@ class ShoppingCart extends Component
     public function removeItem($id) {
         $cart = Cart::whereId($id)->first();
         $cart->delete();
+
+        $this->emit('updateCartCount');
     }
 }

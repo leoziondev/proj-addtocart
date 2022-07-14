@@ -26,6 +26,8 @@ class Productlist extends Component
                 'product_id' => $id,
             ];
 
+            $this->emit('updateCartCount');
+
             ShoppingCart::updateOrCreate($data);
             session()->flash('success', 'Product added to the cart successfully!');
         } else {
